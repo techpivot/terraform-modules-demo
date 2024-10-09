@@ -3,6 +3,11 @@ output "endpoints" {
   value       = aws_vpc_endpoint.this
 }
 
+output "endpoint_arn" {
+  description = "VPC endpoint arns"
+  value       = aws_vpc_endpoint.this[*].arn
+}
+
 output "security_group_arn" {
   description = "Amazon Resource Name (ARN) of the security group"
   value       = aws_security_group.this.arn

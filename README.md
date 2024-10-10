@@ -16,7 +16,7 @@ For more details on the underlying GitHub Action, please visit the [Terraform Mo
 
 To see the action in use, please refer to the following:
 
-- [**Pull Requests**](https://github.com/techpivot/terraform-modules-demo/pulls): Check out the pull requests in this repository to observe the action's automated tagging, release, and comment generation.
+- [**Pull Requests**](https://github.com/techpivot/terraform-modules-demo/pulls?q=is%3Apr+is%3Aclosed): Check out the pull requests in this repository to observe the action's automated tagging, release, and comment generation.
 - [**Releases**](https://github.com/techpivot/terraform-modules-demo/releases): Visit the Releases tab for detailed changelogs associated with various Terraform modules, including dynamically generated release notes for each module.
 - [**Wiki**](https://github.com/techpivot/terraform-modules-demo/wiki): The generated module documentation, including changelogs and usage details, is available in the repository's Wiki. This is automatically updated with each release.
 

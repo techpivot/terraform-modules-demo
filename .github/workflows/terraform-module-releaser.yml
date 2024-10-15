@@ -1,7 +1,7 @@
 name: Terraform Module Releaser
 on:
   pull_request:
-    types: [opened, edited, synchronize, closed] # Closed required
+    types: [opened, reopened, synchronize, closed] # Closed required
     branches:
       - main
 
@@ -17,4 +17,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Terraform Module Releaser
-        uses: techpivot/terraform-module-releaser@v1
+        uses: techpivot/terraform-module-releaser@v1.1.0

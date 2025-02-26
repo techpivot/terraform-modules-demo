@@ -18,5 +18,17 @@ jobs:
 
       - name: Terraform Module Releaser
         uses: techpivot/terraform-module-releaser@v1
+        id: release
         with:
           use-ssh-source-format: true
+
+      - id: debug
+        name: Debug
+        run: |
+          echo '${{ toJSON(steps.release.outputs) }}'
+          echo ${{ steps.release.outputs.changed-module-names }}
+          echo ${{ steps.release.outputs.changed-module-paths }}
+          echo ${{ steps.release.outputs.changed-modules-map }}
+          echo ${{ steps.release.outputs.all-module-names }}
+          echo ${{ steps.release.outputs.all-module-paths }}
+          echo ${{ steps.release.outputs.all-modules-map }}

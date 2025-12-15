@@ -1,4 +1,5 @@
 locals {
+  # Documentation
   endpoints = { for k, v in var.endpoints : k => v }
 
   security_group_ids = concat(var.security_group_ids, [aws_security_group.this.id])

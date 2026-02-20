@@ -21,6 +21,7 @@ jobs:
         id: release
         with:
           use-ssh-source-format: true
+          module-path-ignore: aws/s3-bucket-object/examples
 
       - id: debug
         name: Debug
